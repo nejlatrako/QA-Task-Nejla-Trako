@@ -102,6 +102,42 @@ newman run path/to/your-specific-collection.json
 
 After running the tests, you can review the results in the terminal for Postman/Newman or in the Cypress Test Runner for UI tests. For more detailed reporting, you can configure additional reporting options in both Cypress and Newman.
 
+### Selenium Tests (Python)
+
+Since I had not previously worked with Selenium, I decided to try it because I noticed that the company uses it. I learned how to write tests using Selenium in Python as part of this task.
+
+To run the Selenium tests, follow these steps:
+
+#### Prerequisites
+Ensure you have the following installed:
+
+- Python (version 3.6 or above): Download Python
+- Selenium WebDriver: Install using pip
+- WebDriver for your browser (e.g., ChromeDriver for Chrome, GeckoDriver for Firefox)
+
+#### Installing Dependencies
+Before running the tests, you'll need to install the required dependencies for Python and Selenium. In your terminal, navigate to the project folder and run the following command:
+
+```bash
+pip install -r requirements.txt
+```
+
+This will install:
+
+- Selenium (for UI tests in Python)
+- Any other dependencies specified in the `requirements.txt` file.
+
+#### Running the Tests
+1. Open a terminal and navigate to the folder containing the Selenium tests.
+2. Run the test file using Python:
+
+```bash
+python path/to/your-selenium-test.py
+```
+
+This will execute the Selenium UI tests in the specified browser and show the results in the terminal.
+
+
 ## Conclusion
 
 Once the tests are run, the results will be available directly in the terminal for API tests and in the Cypress Test Runner for UI tests.
